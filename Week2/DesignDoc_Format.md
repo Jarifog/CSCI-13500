@@ -51,6 +51,10 @@ EXAMPLE:
 
 ---
 
+## Key Design Choices
+
+Write any design choice that you made over all possible choices and why. 
+
 ## Program Steps (Algorithm)
 
 1. Get input from the user.
