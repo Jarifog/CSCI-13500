@@ -1,0 +1,101 @@
+# Program Design Document
+
+## Program Name
+
+Assigmnet 1.5 calculator 
+
+## Purpose
+
+This program does basic calculations with any integer and 5 basic operations but does not compute numbers being divided or moduloed with 0. 
+
+---
+
+## Inputs
+
+List all inputs the program will receive.
+
+Example:
+
+* "First digits"
+* "Second Digits"
+* "symbol of operation" 
+
+---
+
+## Outputs
+
+List what the program will display or produce.
+
+
+Final calucation.
+Error message when dividing or using modulo by 0. 
+
+---
+
+## Variables
+
+| Variable | Type   | Purpose                   |
+| -------- | ------ | ------------------------- |
+| A    | int | Stores test score         |
+| B  | int | inputs/stores number |
+| Operation    | char   | order of operation based on chosen symbol      |
+
+---
+
+## Key Design Choices
+
+I used an if statement to handle the error message when diving by 0 and did switch statement because there are multiple operations.
+
+
+---
+
+## Program Steps (Algorithm)
+
+1. Get input from the user, integers a and b asking the user for the first and second digit. 
+2. asks user to choose order of operation symbol. 
+3. Perform calculations.
+4. use switch and if statement to check for order of operation based on symbol and check wether user is diving by 0 in which an error message will be displayed. 
+5. Display output of final calculations. 
+
+---
+
+## Functions
+
+int main ()
+
+---
+
+## Sample Input/Output
+
+Input first number: 2
+Input second number: 2
+Input order of operation: +
+
+Output:
+final calculation: 4
+---
+
+## Testing
+
+Test Case 1
+
+Input:
+
+a = 8
+b = 4
+operation = +
+
+Expected Result:
+
+Result: 12
+Test Case 2
+
+Input:
+
+a = 8
+b = 0
+operation = /
+
+Expected Result:
+
+Error: number cannot be divided by 0
