@@ -1,0 +1,121 @@
+# Program Design Document
+
+## Program Name
+
+Project 1 Gpa Calculator. 
+
+## Purpose
+
+So the following program allows the user to input credit values and letter grades of classes taken, these values are specfic to a singular class, in which the user is able to continue adding the class, credits, and letter grade. Calculating the total final gpa.  
+
+---
+
+## Inputs
+
+The program receives the following inputs from the user:
+
+Credits for each class
+Letter grade for each class
+Whether the user wants to enter another class, using Y or N
+
+Valid grades include:
+
+A+, A, A-, B+, B, B-, C+, C, D, F, WU, FIN, FAB
+
+Valid credits must be greater than 0 and less than 10.
+
+
+---
+
+## Outputs
+
+Instructions for how to use the GPA calculator
+
+Invalid input messages when credits or grades are not valid
+
+The number of classes entered
+
+The final semester GPA
+
+A message saying no classes were entered if the user does not enter any valid classes.
+
+---
+
+## Variables
+
+| Variable | Type   | Purpose                   |
+| -------- | ------ | ------------------------- |
+| tc    | double |Stores the total number of credits entered       |
+| tp  | double | Stores total points earned from all classes inputed.  |
+| credits  | double |Stores the credit value for the current class.      |
+| Gradepoints  | double |Stores the number value of the letter grade, such as A = 4.0 or B = 3.0. |
+| grade    | string   | Stores letter grade       |
+|classesTaken | int | Stores how many valid classes the user entered.
+|again | char | Stores whether the user wants to enter another class.
+---
+
+## Key Design Choices
+
+Explain any important decisions you made when designing the program.
+
+I impleted a loop into my code when asking for the classes as the project requirments require multiple classes, thier letter grade and credits. Not using this would have made me write endless amounts of code accomadating this user input. 
+
+I also used an upper case mechanic in which if user inputs any lowe case letter it is automatically turned into an upper case to make the code insensitive to upper or lower case letters. For example, if the user enters a or b+, the program changes it to A or B+. This makes the program easier to implement the case insensitive requirement. 
+
+I chose to use if and if else statments instead of switch as some of the letter grades have more than one characters. 
+
+
+---
+
+## Program Steps (Algorithm)
+
+1. Prompts user on how to use program, asking to ender credits from 0.1-9.9 followed by the grade for one class. 
+2. Validates the users input, if invalid outputs error based on range of 0 to less than 10. 
+3. Converts any letter input to upper case. 
+4. Stores information entered. (via adding to variables, tp, tc and classes taken)
+5. asks the user if they want to keep going via y/n.
+6. if any parts invalid lets user know and asks for another input. 
+7. Determine/perform calculations results.
+8. Displays output of culamtive gpa, and classes taken. 
+
+---
+
+fucntion written in int main()
+---
+
+## Sample Input/Output
+
+Sample Input:
+
+3A
+Y
+4B
+N
+
+Sample Output:
+
+Classes taken: 2
+Semester GPA: 3.43
+---
+
+## Testing
+test case 1: 
+
+input: 
+
+3A
+Y
+4B
+N
+
+Output:
+
+Classes taken: 2
+Semester GPA: 3.43
+
+tested and working as expected. 
+
+
+AI Usage Reflection: 
+
+I used Chatgpt to help figure out my peramaters and what libaries i need to use to complete this assingment. I specfically used it for figuring out how to round to the nearest 100th, and how to check for invalid credit checker these parts in whcih i will look into further to fully understand how they work. I also had it help me in figuring out how to implement my upper case mechanic where any letter entered when prompting the user to enter a letter grade to be converted to an uppercase regardless if it was a lowercase letter. It also helped me understand the while loop and imeplement that into my code as i had troubles implemeting a while loop. 
