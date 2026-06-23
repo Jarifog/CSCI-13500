@@ -28,7 +28,7 @@ If not, the codename may belong to an imposter. Print a warning message to alert
 
 Objective: Determine whether the spy codename is an anagram of the officer's name and flag any invalid codenames.
 
-##
+## Part 2:
 Find the run time for each of the tasks, give me the time complexity and explain why. Extra points if you can tell me the space complexity!
 
 Find the source code file labeled assignment4.cpp to begin your mission.
