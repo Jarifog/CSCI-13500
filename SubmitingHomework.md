@@ -31,7 +31,7 @@ Navigate to the correct Week and make an assignments folder and complete your as
   README.md  
 Only edit files inside the designated homework folder — do not modify other folders.
 
-**Step 4:** Stage, Commit, and Push
+## **Step 4:** Stage, Commit, and Push
 Once your work is ready, run:
 ```bash
 git add .

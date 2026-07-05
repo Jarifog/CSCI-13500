@@ -1,6 +1,10 @@
 # CSCI-13500
 CUNY Hunter College Summer 2026 official course repository. 
 
+## Leetcodes We Have Solved
+[1351. Count Negative Numbers in a Sorted Matrix](https://leetcode.com/problems/count-negative-numbers-in-a-sorted-matrix/)  
+[2133. Check if Every Row and Column Contains All Numbers](https://leetcode.com/problems/check-if-every-row-and-column-contains-all-numbers/)
+
 ## Questions
 Common issues you may face and a quick guide to resolution! 
 
@@ -8,19 +12,7 @@ Common issues you may face and a quick guide to resolution!
 Go to the appropriate week and open the readFirst.md file. It will contain a link to canva slides. 
 
 ### How do I safely get copies of updates from this repo into my local repo?
-To get the latest assignment updates while keeping your own work, follow these steps:  
-
-1. Save your local changes  
-2. Download and apply the newest changes from the online repository  
-
-Run the following commands inside your cloned repository:  
-**Note: This only works once you have already cloned this repo**
-
-```
-git add .
-git commit -m "work in progress"
-git pull --rebase
-```
+To get the latest assignment updates while keeping your own work, check the GetRepoUpdates.md
 
 If Git reports a merge conflict, it means the same lines were changed both locally and online. Git will ask you to resolve the conflict manually before continuing.  
 
