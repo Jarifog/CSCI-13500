@@ -2,6 +2,8 @@
 #include <cstdlib>
 #include <ctime>
 
+
+//used ai and was told to use srand time()
 int RollDice() {
     static bool first = true;
 

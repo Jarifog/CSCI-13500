@@ -11,14 +11,39 @@ Snake::Snake() {
     tail_ = nullptr;
     length_ = 0;
     id_ = 0;
-    // TODO: allocate STARTING_LENGTH nodes and link them together
+
+    for (int i = 0; i < STARTING_LENGTH; i++) {
+        Node* newNode = new Node;
+        newNode->body_part_ = id_;
+        id_++;
+        newNode->next_ = nullptr;
+
+        if (head_ == nullptr) {
+            head_ = newNode;
+            tail_ = newNode;
+        } else {
+            tail_->next_ = newNode;
+            tail_ = newNode;
+        }
+
+        length_++;
+    }
 }
+
+
+
 
 // TODO: Destructor
 // - Walk the list and delete every remaining node.
 // - If you don't do this, running under valgrind/ASan will report a leak.
 Snake::~Snake() {
-    // TODO
+    Node* current = head_;
+
+    while (current != nullptr) {
+        Node* nextNode = current->next_;
+        delete current;
+        current = nextNode;
+    }
 }
 
 // TODO: kill()
@@ -113,5 +138,5 @@ void Snake::PrintSnake() const {
 
 int Snake::GetLength() const {
     // TODO
-    return lenmgth_;
+    return length_;
 }
